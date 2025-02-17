@@ -156,8 +156,7 @@
       } 
       .box{
         box-shadow: 2px 3px 5px #333;
-        /* padding: 20px; */
-        /* background-color: red; */
+        
       }
       footer{
         border-top-left-radius: 100px;
@@ -194,6 +193,104 @@
         border: 2px solid rgb(255, 157, 0);
         border-radius: 10px; 
     }
+    .marquee{
+        
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: scrollText 15s linear infinite;
+      }
+
+  @keyframes scrollText {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
     
+       .parent-page a::before{
+        content:"";
+        position: absolute;
+        height: 2px;
+        width: 0%;
+        background-color: #fff;
+        left: 0;
+        bottom: -2px;
+    }
+    .parent-page:hover{
+        color:#FF9D00;
+    }
+       .parent-page a:hover::before{
+        width: 100%;
+        color:#FF9D00;
+        transition: width .7s ease-in-out;
+    }
+    form h2{
+        text-align: center;
+        font-size: clamp(3vw, 1.6rem, 5vw);
+    }
+    form{
+        width: 100%;
+        padding-top: 20px;
+        min-height: 100vh;
     
+    }
+    .container-form{
+        margin: 0 auto;
+        width: 90%;
+        max-width: 550px;
+        box-shadow: 2px 3px 7px #333,
+                           -2px -3px 7px #333;
+        padding: 20px;
+        
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px;
+        border-radius: 10px;
+    }
+    .container-form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+    form input, form textarea, form label, form span{
+        max-width: 450px;
+        width: 100%;
+    }
+    form input{
+        border: 2px solid  #333;
+        padding: 10px 15px;
+        border-radius: 7px;
+    }
+    form textarea{
+        resize: none;
+        height: 170px;
+        border: 2px solid  #333;
+        padding: 10px 15px;
+        border-radius: 7px;
+    }
+    form input[type='submit']{
+        cursor: pointer;
+    }
+    form input[type='submit']:hover{
+        background: #7C1152;
+        color:#fff;
+        transition: .3s ease-in;
+    }
+    form span{
+        height: 15px;
+        
+    }
+    .error{
+        border: 1.5px solid red;
+    }
+
+
+
+
 }

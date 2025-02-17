@@ -588,10 +588,6 @@ video {
   }
 }
 
-.absolute {
-  position: absolute;
-}
-
 .relative {
   position: relative;
 }
@@ -600,24 +596,8 @@ video {
   position: sticky;
 }
 
-.left-0 {
-  left: 0px;
-}
-
 .top-0 {
   top: 0px;
-}
-
-.top-\[50\] {
-  top: 50;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.left-\[50\%\] {
-  left: 50%;
 }
 
 .z-20 {
@@ -657,24 +637,16 @@ video {
   height: 400px;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
 .h-\[60\%\] {
   height: 60%;
 }
 
-.h-\[60px\] {
-  height: 60px;
-}
-
 .h-\[80px\] {
   height: 80px;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[50px\] {
-  height: 50px;
 }
 
 .max-h-\[350px\] {
@@ -693,16 +665,12 @@ video {
   width: 300px;
 }
 
-.w-\[60px\] {
-  width: 60px;
+.w-\[50px\] {
+  width: 50px;
 }
 
 .w-\[80px\] {
   width: 80px;
-}
-
-.w-\[50px\] {
-  width: 50px;
 }
 
 .cursor-pointer {
@@ -733,6 +701,10 @@ video {
   justify-content: space-around;
 }
 
+.gap-\[10px\] {
+  gap: 10px;
+}
+
 .gap-\[20px\] {
   gap: 20px;
 }
@@ -743,14 +715,6 @@ video {
 
 .gap-\[40px\] {
   gap: 40px;
-}
-
-.gap-\[20\] {
-  gap: 20;
-}
-
-.gap-\[10px\] {
-  gap: 10px;
 }
 
 .overflow-y-auto {
@@ -815,12 +779,16 @@ video {
   padding: 50px;
 }
 
-.pt-\[40px\] {
-  padding-top: 40px;
+.p-\[5px\] {
+  padding: 5px;
 }
 
 .pt-\[0px\] {
   padding-top: 0px;
+}
+
+.pt-\[40px\] {
+  padding-top: 40px;
 }
 
 .text-center {
@@ -889,26 +857,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\] {
-  color: ;
-}
-
-.text-\[\#\] {
-  color: #;
-}
-
-.text-\[\#FF\] {
-  color: #FF;
-}
-
-.text-\[\#FF\(\)\] {
-  color: #FF();
-}
-
-.text-\[\#FF9D\] {
-  color: #FF9D;
 }
 
 .shadow-2xl {
@@ -1095,8 +1043,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 .box{
   box-shadow: 2px 3px 5px #333;
-  /* padding: 20px; */
-  /* background-color: red; */
 }
 
 footer{
@@ -1139,6 +1085,109 @@ footer i{
   border-radius: 10px;
 }
 
+.marquee{
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: scrollText 15s linear infinite;
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.parent-page a::before{
+  content:"";
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #fff;
+  left: 0;
+  bottom: -2px;
+}
+
+.parent-page:hover{
+  color:#FF9D00;
+}
+
+.parent-page a:hover::before{
+  width: 100%;
+  color:#FF9D00;
+  transition: width .7s ease-in-out;
+}
+
+form h2{
+  text-align: center;
+  font-size: clamp(3vw, 1.6rem, 5vw);
+}
+
+form{
+  width: 100%;
+  padding-top: 20px;
+  min-height: 100vh;
+}
+
+.container-form{
+  margin: 0 auto;
+  width: 90%;
+  max-width: 550px;
+  box-shadow: 2px 3px 7px #333,
+                           -2px -3px 7px #333;
+  padding: 20px;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:10px;
+  border-radius: 10px;
+}
+
+.container-form div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form input, form textarea, form label, form span{
+  max-width: 450px;
+  width: 100%;
+}
+
+form input{
+  border: 2px solid  #333;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+
+form textarea{
+  resize: none;
+  height: 170px;
+  border: 2px solid  #333;
+  padding: 10px 15px;
+  border-radius: 7px;
+}
+
+form input[type='submit']{
+  cursor: pointer;
+}
+
+form input[type='submit']:hover{
+  background: #7C1152;
+  color:#fff;
+  transition: .3s ease-in;
+}
+
+form span{
+  height: 15px;
+}
+
 /* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
 
 .hover\:bg-\[\#333\]:hover {
@@ -1151,6 +1200,11 @@ footer i{
   background-color: rgb(255 157 0 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:text-\[\#333\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-\[\#FF9D00\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 157 0 / var(--tw-text-opacity, 1));
@@ -1159,9 +1213,4 @@ footer i{
 .hover\:text-\[\#f1f1f1\]:hover {
   --tw-text-opacity: 1;
   color: rgb(241 241 241 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-\[\#333\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(51 51 51 / var(--tw-text-opacity, 1));
 }
