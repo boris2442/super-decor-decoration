@@ -30,7 +30,7 @@ nameForm.addEventListener("input", (e) => {
 });
 surname.addEventListener("input", (e) => {
   const valueSurname = e.target.value;
-
+console.log(valueSurname)
   if (valueSurname === "") {
     surname.classList.add("error");
     spanSurname.textContent = "le nom est obligatoire";
@@ -67,9 +67,7 @@ textarea.addEventListener("input", (e) => {
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (
-    nameForm.classList.contains("error") ||
-    surname.classList.contains("error") ||
-    textarea.classList.contains("error")
+    nameForm.classList.contains("error") ||surname.classList.contains("error") || textarea.classList.contains("error")
   ) {
     alert("veuillez remplir tous les champs correctement");
     return;
