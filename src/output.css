@@ -1176,11 +1176,14 @@ form textarea{
 
 form input[type='submit']{
   cursor: pointer;
+  background: #7C1152;
+  color:#FF9D00;
+  font-weight: bold;
 }
 
 form input[type='submit']:hover{
-  background: #7C1152;
   color:#fff;
+  background: #333;
   transition: .3s ease-in;
 }
 
