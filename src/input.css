@@ -196,7 +196,7 @@
     .marquee{
         
         white-space: nowrap;
-        overflow: hidden;
+        /* overflow: hidden; */
         display: inline-block;
         animation: scrollText 15s linear infinite;
       }
