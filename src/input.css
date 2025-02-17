@@ -7,6 +7,7 @@
 @layer utilities{
     body{
         font-family:"Poppins", "Parkinsans",;
+        scroll-behavior: smooth;
     }
     header a::before{
         content:"";
@@ -22,7 +23,7 @@
         transition: width .7s ease-in-out;
     }
     .hero-section{
-        /* background-image: url("../asset/hero-section_LE_auto_x4 (5)-min.jpg"); */
+     
         background-image: url("../asset/hero-section_LE_auto_x4 (5)-min.jpg");
         background-position: center;
         background-size: cover;

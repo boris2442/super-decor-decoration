@@ -657,6 +657,14 @@ video {
   height: 80px;
 }
 
+.h-\[\] {
+  height: ;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
 .max-h-\[350px\] {
   max-height: 350px;
 }
@@ -679,6 +687,10 @@ video {
 
 .w-\[80px\] {
   width: 80px;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .cursor-pointer {
@@ -721,6 +733,14 @@ video {
   gap: 40px;
 }
 
+.gap-\[20\] {
+  gap: 20;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -744,11 +764,6 @@ video {
 .border-\[\#333\] {
   --tw-border-opacity: 1;
   border-color: rgb(51 51 51 / var(--tw-border-opacity, 1));
-}
-
-.border-\[\#FF9D00\] {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 157 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#7C1152\] {
@@ -784,16 +799,16 @@ video {
   padding: 20px;
 }
 
-.p-\[40px\] {
-  padding: 40px;
-}
-
 .p-\[50px\] {
   padding: 50px;
 }
 
 .pt-\[40px\] {
   padding-top: 40px;
+}
+
+.pt-\[0px\] {
+  padding-top: 0px;
 }
 
 .text-center {
@@ -864,6 +879,26 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\] {
+  color: ;
+}
+
+.text-\[\#\] {
+  color: #;
+}
+
+.text-\[\#FF\] {
+  color: #FF;
+}
+
+.text-\[\#FF\(\)\] {
+  color: #FF();
+}
+
+.text-\[\#FF9D\] {
+  color: #FF9D;
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -877,6 +912,7 @@ video {
 
 body{
   font-family:"Poppins", "Parkinsans",;
+  scroll-behavior: smooth;
 }
 
 header a::before{
@@ -895,7 +931,6 @@ header :hover::before{
 }
 
 .hero-section{
-  /* background-image: url("../asset/hero-section_LE_auto_x4 (5)-min.jpg"); */
   background-image: url("../asset/hero-section_LE_auto_x4 (5)-min.jpg");
   background-position: center;
   background-size: cover;
@@ -1094,23 +1129,9 @@ footer i{
 
 /* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
 
-.hover\:border-\[\#FF9D00\]:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 157 0 / var(--tw-border-opacity, 1));
-}
-
 .hover\:bg-\[\#333\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(51 51 51 / var(--tw-bg-opacity, 1));
-}
-
-.hover\:bg-\[gre\]:hover {
-  background-color: gre;
-}
-
-.hover\:bg-green-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:bg-\[\#FF9D00\]:hover {
