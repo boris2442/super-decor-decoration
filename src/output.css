@@ -608,6 +608,18 @@ video {
   top: 0px;
 }
 
+.top-\[50\] {
+  top: 50;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
 .z-20 {
   z-index: 20;
 }
@@ -1147,4 +1159,9 @@ footer i{
 .hover\:text-\[\#f1f1f1\]:hover {
   --tw-text-opacity: 1;
   color: rgb(241 241 241 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#333\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity, 1));
 }
