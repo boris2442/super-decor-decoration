@@ -653,6 +653,18 @@ video {
   height: 80px;
 }
 
+.h-\[70\%\] {
+  height: 70%;
+}
+
+.h-\[0\%\] {
+  height: 0%;
+}
+
+.h-\[30\%\] {
+  height: 30%;
+}
+
 .max-h-\[350px\] {
   max-height: 350px;
 }
@@ -1205,12 +1217,12 @@ form input[type='submit']{
   cursor: pointer;
   background: #7C1152;
   color:#FF9D00;
-  font-weight: bold;
+  font-weight: bold
 }
 
 form input[type='submit']:hover{
-  color:#fff;
   background: #333;
+  color:#fff;
   transition: .3s ease-in;
 }
 

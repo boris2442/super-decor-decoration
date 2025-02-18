@@ -16,4 +16,8 @@
     color:#333;
     text-transform: uppercase;
    }
-   
+   img:hover{
+    transform:rotateY(180deg);
+    transition: .5s ease-in;
+    cursor: pointer;
+}
