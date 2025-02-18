@@ -729,12 +729,12 @@ video {
   border-radius: 0.25rem;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-\[9px\] {
   border-radius: 9px;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .border-2 {
@@ -829,6 +829,10 @@ video {
   font-weight: 700;
 }
 
+.lowercase {
+  text-transform: lowercase;
+}
+
 .capitalize {
   text-transform: capitalize;
 }
@@ -840,6 +844,11 @@ video {
 .text-\[\#333\] {
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#7C1152\] {
+  --tw-text-opacity: 1;
+  color: rgb(124 17 82 / var(--tw-text-opacity, 1));
 }
 
 .text-\[\#FF9D00\] {
@@ -865,11 +874,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#7C1152\] {
-  --tw-text-opacity: 1;
-  color: rgb(124 17 82 / var(--tw-text-opacity, 1));
 }
 
 .shadow-2xl {
@@ -1230,6 +1234,10 @@ form span{
 .hover\:text-\[\#FF9D00\]:hover {
   --tw-text-opacity: 1;
   color: rgb(255 157 0 / var(--tw-text-opacity, 1));
+}
+
+.hover\:text-\[\#\]:hover {
+  color: #;
 }
 
 .hover\:text-\[\#f1f1f1\]:hover {
