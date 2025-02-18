@@ -1,4 +1,6 @@
-
+img{
+    opacity: 0;
+   }
 .error{
     border: 2px solid #7C1152;
 
@@ -14,3 +16,4 @@
     color:#333;
     text-transform: uppercase;
    }
+   

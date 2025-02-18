@@ -62,3 +62,28 @@ const sr=ScrollReveal({
 });
 
 sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform, box-footer, .fa-brands, .fa-solid, .parent-page, .fa-regular, .fas ', {interval: 200})
+
+
+
+const images=document.querySelectorAll('img');
+let options={
+    root:null,
+    rootMargin:"-100px 0px 0px 0px",
+    threshold:0
+};
+
+
+function handleIntersection(entries){
+
+entries.forEach(entry=>{
+    if(entry.isIntersecting){
+        entry.target.style.opacity=1
+    }
+})
+}
+
+const observer=new IntersectionObserver(handleIntersection, options)
+
+images.forEach(image=>{
+observer.observe(image)
+})
