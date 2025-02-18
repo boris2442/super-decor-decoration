@@ -12,7 +12,7 @@ const typewriter=new Typewriter(title, {
 })
 
 typewriter
-.typeString("<span>SUPER DECOR:</span><br /> <span class='spanTitle'>EXPERT EN DECORATION EVENEMENTIELLE 🤌 </span> ")               
+.typeString("<span class='name-entreprise'>SUPER DECOR:</span><br /> <span class='spanTitle'>EXPERT EN DéCORATION éVèNEMENTIELLE 🤌 </span> ")               
 .pauseFor(2000)      
 .deleteAll()       
 // .typeString(" "  )
@@ -23,22 +23,31 @@ typewriter
 
 
 
-const links=document.querySelector("header ul li a");
 
-const scrollActive=()=>{
-    const sections=document.querySelectorAll("section")
-      sections.forEach(section=>{
-        const height=section.ofsetHeight;
-        const top=section.ofsetTop
-        const scrool=scroll.Y
-        let id=document.getAttribute("id")
-      })
-      if(scroll>=top-400  && scroll<top+height){
-        links.forEach(link=>{
-          link.classList.remove('active')
-        })
-        let recuperationId=document.querySelector(`header ul li a*[href="${id}"]`).classList.add("active")
-      }
-}
-window.addEventListener("scroll", scrollActive)
   
+const links = document.querySelectorAll("header ul li a");
+const sections = document.querySelectorAll("section");
+
+const scrollActive = () => {
+    let scroll = window.scrollY; // On récupère la position du scroll
+
+    sections.forEach(section => {
+        const height = section.offsetHeight;
+        const top = section.offsetTop;
+        let id = section.getAttribute("id");
+
+        // Vérification si la section est visible dans la fenêtre d'affichage
+        if (scroll >= top - 400 && scroll < top + height) {
+            links.forEach(link => {
+                link.classList.remove("active");
+            });
+
+            let activeLink = document.querySelector(`header ul li a[href="#${id}"]`);
+            if (activeLink) {
+                activeLink.classList.add("active");
+            }
+        }
+    });
+};
+
+window.addEventListener("scroll", scrollActive);
