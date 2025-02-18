@@ -15,10 +15,7 @@ typewriter
 .typeString("<span class='name-entreprise'>SUPER DECOR:</span><br /> <span class='spanTitle'>EXPERT EN DéCORATION éVèNEMENTIELLE 🤌 </span> ")               
 .pauseFor(2000)      
 .deleteAll()       
-// .typeString(" "  )
-// .pauseFor(200
-// 0)
-//  .deleteAll()
+
 .start();
 
 
@@ -29,14 +26,16 @@ const links = document.querySelectorAll("header ul li a");
 const sections = document.querySelectorAll("section");
 
 const scrollActive = () => {
-    let scroll = window.scrollY; // On récupère la position du scroll
+    let scroll = window.scrollY; 
+    
 
     sections.forEach(section => {
         const height = section.offsetHeight;
         const top = section.offsetTop;
         let id = section.getAttribute("id");
 
-        // Vérification si la section est visible dans la fenêtre d'affichage
+        
+        
         if (scroll >= top - 400 && scroll < top + height) {
             links.forEach(link => {
                 link.classList.remove("active");
