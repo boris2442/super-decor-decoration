@@ -61,4 +61,4 @@ const sr=ScrollReveal({
   reset: false
 })
 
-sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform ', {interval: 200})
+sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform, box-footer, .fa-brands, .fa-solid, .parent-page, .fa-regular ', {interval: 200})
