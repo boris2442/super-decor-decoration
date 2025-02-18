@@ -50,3 +50,15 @@ const scrollActive = () => {
 };
 
 window.addEventListener("scroll", scrollActive);
+
+
+//partie du scrollReveal
+
+const sr=ScrollReveal({
+  origin:'top',
+  distance: '40px',
+  duration: 1500,
+  reset: false
+})
+
+sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform ', {interval: 200})
