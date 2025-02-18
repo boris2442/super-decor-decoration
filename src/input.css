@@ -24,12 +24,18 @@
     }
     .hero-section{
      
-        background-image: url("../asset/hero-section_LE_auto_x4 (5)-min.jpg");
+        /* background-image: url("../asset/background.webp"); */
+        background-image: url("../asset/couverts.jpg");
         background-position: center;
         background-size: cover;
+
+        object-fit: cover;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         width: 100%;
         min-height: 100vh;
+        image-rendering: crisp-edges;
+image-rendering: -webkit-optimize-contrast;
     }
     .spanTitle{
         color:#FF9D00;

@@ -633,8 +633,8 @@ video {
   height: 12vh;
 }
 
-.h-\[40\%\] {
-  height: 40%;
+.h-\[30\%\] {
+  height: 30%;
 }
 
 .h-\[400px\] {
@@ -645,24 +645,12 @@ video {
   height: 50px;
 }
 
-.h-\[60\%\] {
-  height: 60%;
-}
-
-.h-\[80px\] {
-  height: 80px;
-}
-
 .h-\[70\%\] {
   height: 70%;
 }
 
-.h-\[0\%\] {
-  height: 0%;
-}
-
-.h-\[30\%\] {
-  height: 30%;
+.h-\[80px\] {
+  height: 80px;
 }
 
 .max-h-\[350px\] {
@@ -930,12 +918,18 @@ header :hover::before{
 }
 
 .hero-section{
-  background-image: url("../asset/hero-section_LE_auto_x4 (5)-min.jpg");
+  /* background-image: url("../asset/background.webp"); */
+  background-image: url("../asset/couverts.jpg");
   background-position: center;
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   min-height: 100vh;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 h1{
