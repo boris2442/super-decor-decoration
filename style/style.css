@@ -1,6 +1,12 @@
-/* img{
+img{
     opacity: 0;
-   } */
+   }
+   header img{
+    opacity: 1;
+   }
+    *, ::after, ::before{
+        scroll-behavior: smooth;
+    }
 .error{
     border: 2px solid #7C1152;
 
@@ -16,8 +22,4 @@
     color:#333;
     text-transform: uppercase;
    }
-   img:hover{
-    transform:rotateY(180deg);
-    transition: .5s ease-in;
-    cursor: pointer;
-}
+   

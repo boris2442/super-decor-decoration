@@ -9,6 +9,11 @@
         font-family:"Poppins", "Parkinsans",;
         scroll-behavior: smooth;
     }
+    img:hover{
+        transform:rotateY(180deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
     header a::before{
         content:"";
         position: absolute;
@@ -295,7 +300,6 @@ image-rendering: -webkit-optimize-contrast;
         height: 15px;
         
     }
-
 
 
 }
