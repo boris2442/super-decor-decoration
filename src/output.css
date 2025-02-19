@@ -1302,7 +1302,10 @@ form span{
     outline: none;
     background:none;
     border: none;
-    cursor: pointer;
+    /* cursor: pointer;
+        display: flex;
+        justify-items: center;
+        align-items: center; */
     position: relative;
     opacity: 1;
     transition:transform 0.4s ease;
@@ -1318,8 +1321,8 @@ form span{
 
   .circle-btn .fa-bars{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 30%;
     font-size:30px;
     transform: translate(-50%, -50%);
     will-change:transform ;
