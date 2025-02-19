@@ -58,7 +58,7 @@ const sr=ScrollReveal({
   origin:'top',
   distance: '40px',
   duration: 1500,
-  reset: false
+  reset: true
 });
 
 sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform, box-footer, .fa-brands, .fa-solid, .parent-page, .fa-regular, .fas ', {interval: 200})
