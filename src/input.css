@@ -300,6 +300,12 @@ image-rendering: -webkit-optimize-contrast;
         height: 15px;
         
     }
+#about{
+    /* background: url("../asset/baches\ event.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
 
+}
 
 }

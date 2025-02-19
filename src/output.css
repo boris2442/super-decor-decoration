@@ -629,10 +629,6 @@ video {
   display: flex;
 }
 
-.grid {
-  display: grid;
-}
-
 .h-\[100\%\] {
   height: 100%;
 }
@@ -649,8 +645,8 @@ video {
   height: 400px;
 }
 
-.h-\[50px\] {
-  height: 50px;
+.h-\[40px\] {
+  height: 40px;
 }
 
 .h-\[70\%\] {
@@ -659,14 +655,6 @@ video {
 
 .h-\[80px\] {
   height: 80px;
-}
-
-.h-\[40px\] {
-  height: 40px;
-}
-
-.max-h-\[350px\] {
-  max-height: 350px;
 }
 
 .min-h-\[70vh\] {
@@ -689,16 +677,12 @@ video {
   width: 300px;
 }
 
-.w-\[50px\] {
-  width: 50px;
+.w-\[40px\] {
+  width: 40px;
 }
 
 .w-\[80px\] {
   width: 80px;
-}
-
-.w-\[40px\] {
-  width: 40px;
 }
 
 .max-w-3xl {
@@ -707,10 +691,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -747,10 +727,6 @@ video {
 
 .gap-\[40px\] {
   gap: 40px;
-}
-
-.overflow-y-auto {
-  overflow-y: auto;
 }
 
 .rounded {
@@ -805,9 +781,9 @@ video {
   background-color: rgb(255 157 0 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#fff\] {
+.bg-\[\#f1f1f1\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cover {
@@ -889,6 +865,10 @@ video {
   font-size: 1.7rem;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
 .text-\[20px\] {
   font-size: 20px;
 }
@@ -896,14 +876,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[2px\] {
-  font-size: 2px;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
 }
 
 .font-\[500\] {
@@ -967,18 +939,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#FF\] {
-  color: #FF;
-}
-
-.text-\[\#FF\(D00\)\] {
-  color: #FF(D00);
-}
-
-.text-\[\#FFD00\] {
-  color: #FFD00;
 }
 
 .opacity-100 {
@@ -1223,20 +1183,6 @@ footer i{
   border: 2px solid #333;
 }
 
-.text-about::-webkit-scrollbar {
-  width: 8px;
-}
-
-.text-about::-webkit-scrollbar-track {
-  background: rgb(255, 157, 0);
-}
-
-.text-about::-webkit-scrollbar-thumb {
-  background: rgb(124, 17, 82);
-  border: 2px solid rgb(255, 157, 0);
-  border-radius: 10px;
-}
-
 .marquee{
   white-space: nowrap;
   /* overflow: hidden; */
@@ -1341,6 +1287,13 @@ form input[type='submit']:hover{
 
 form span{
   height: 15px;
+}
+
+#about{
+  /* background: url("../asset/baches\ event.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
 }
 
 /* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
