@@ -57,11 +57,11 @@ window.addEventListener("scroll", scrollActive);
 const sr=ScrollReveal({
   origin:'top',
   distance: '40px',
-  duration: 1000,
+  duration: 1500,
   reset: true
 });
 
-sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform, box-footer, .fa-brands, .fa-solid, .parent-page, .fa-regular, .fas ', {interval: 200});
+sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform, box-footer, .fa-brands, footer i, .parent-page, .fa-regular, .fas ', {interval: 200});
 
 
 
@@ -97,7 +97,7 @@ menu.addEventListener("click",()=>{
 navigation.classList.toggle("translate");
 })
 
-// window.addEventListener("scroll", ()=>{
-//     navigation.classList.remove("translate");
-// })
+window.addEventListener("scroll", ()=>{
+    navigation.classList.remove("translate");
+})
 
