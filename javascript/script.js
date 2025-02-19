@@ -1,8 +1,8 @@
 
 
 window.onload = function() {
-    document.querySelector('.loader').style.display = 'none';
-    document.querySelector('.loader').style.transition='5s ease-out'
+    document.querySelector('.loader').style.display = 'none';;
+    document.querySelector('.loader').style.transition='5s ease-out';
 };
 
 const title=document.querySelector("h1");
@@ -61,7 +61,7 @@ const sr=ScrollReveal({
   reset: true
 });
 
-sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform, box-footer, .fa-brands, .fa-solid, .parent-page, .fa-regular, .fas ', {interval: 200})
+sr.reveal('.marquee, .title, .para, .link, .second-title, .spantexte, .third-title, .box, .scrollform, box-footer, .fa-brands, .fa-solid, .parent-page, .fa-regular, .fas ', {interval: 200});
 
 
 
@@ -85,5 +85,19 @@ entries.forEach(entry=>{
 const observer=new IntersectionObserver(handleIntersection, options)
 
 images.forEach(image=>{
-observer.observe(image)
+observer.observe(image);
+});
+
+
+
+
+const navigation=document.querySelector("header ul")
+const menu=document.querySelector(".fa-bars");
+menu.addEventListener("click",()=>{
+navigation.classList.toggle("translate");
 })
+
+// window.addEventListener("scroll", ()=>{
+//     navigation.classList.remove("translate");
+// })
+

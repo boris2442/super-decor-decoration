@@ -324,11 +324,12 @@ image-rendering: -webkit-optimize-contrast;
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 12vh;
+        /* top: 12vh; */
         width: 200px;
         height:250px;
-
-        left:0;
+      right:0;
+      transition: .9s ease-in-out;
+      top:300px;
         background-color: #7C1152;
 
     }
@@ -336,10 +337,7 @@ image-rendering: -webkit-optimize-contrast;
         outline: none;
         background:none;
         border: none;
-        /* cursor: pointer;
-        display: flex;
-        justify-items: center;
-        align-items: center; */
+     
        position: relative; 
     
         opacity: 1;
@@ -354,8 +352,8 @@ image-rendering: -webkit-optimize-contrast;
       
       .circle-btn .fa-bars{
         position: absolute;
-        top: 25%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
         font-size:30px;
         transform: translate(-50%, -50%);
         
@@ -379,6 +377,19 @@ image-rendering: -webkit-optimize-contrast;
       .circle-btn:hover .filled{
         stroke-dashoffset:0 ;
         
+      }
+      .translate{
+        top: 12vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+ width: 200px;
+        height:250px;
+         right:0;
+      top:12vh;
+        background-color: #7C1152;
+        transition: .9s ease-in-out;
+
       }
 }
 
