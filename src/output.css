@@ -588,12 +588,8 @@ video {
   }
 }
 
-.pointer-events-auto {
-  pointer-events: auto;
-}
-
-.fixed {
-  position: fixed;
+.pointer-events-none {
+  pointer-events: none;
 }
 
 .absolute {
@@ -608,32 +604,20 @@ video {
   position: sticky;
 }
 
-.top-0 {
-  top: 0px;
-}
-
 .left-0 {
   left: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-20 {
   z-index: 20;
 }
 
-.z-\[-1\] {
-  z-index: -1;
-}
-
-.z-\[10\] {
-  z-index: 10;
-}
-
-.z-\[3\] {
-  z-index: 3;
-}
-
-.z-\[1\] {
-  z-index: 1;
+.z-\[0\] {
+  z-index: 0;
 }
 
 .m-\[6px\] {
@@ -808,11 +792,6 @@ video {
 .bg-\[\#f1f1f1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -1415,10 +1394,6 @@ form span {
 }
 
 /* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
-
-.first\:w-\[100\%\]:first-child {
-  width: 100%;
-}
 
 .hover\:bg-\[\#333\]:hover {
   --tw-bg-opacity: 1;

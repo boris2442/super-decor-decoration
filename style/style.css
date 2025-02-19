@@ -1,6 +1,6 @@
-/* img{
+img{
     opacity: 0;
-   } */
+   }
    header img{
     opacity: 1;
    }
@@ -22,4 +22,9 @@
     color:#333;
     text-transform: uppercase;
    }
-   
+   #particles-js canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+  }
