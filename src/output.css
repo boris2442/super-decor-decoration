@@ -592,6 +592,10 @@ video {
   pointer-events: auto;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -618,6 +622,18 @@ video {
 
 .z-\[-1\] {
   z-index: -1;
+}
+
+.z-\[10\] {
+  z-index: 10;
+}
+
+.z-\[3\] {
+  z-index: 3;
+}
+
+.z-\[1\] {
+  z-index: 1;
 }
 
 .m-\[6px\] {
@@ -792,6 +808,11 @@ video {
 .bg-\[\#f1f1f1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -1394,6 +1415,10 @@ form span {
 }
 
 /* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */
+
+.first\:w-\[100\%\]:first-child {
+  width: 100%;
+}
 
 .hover\:bg-\[\#333\]:hover {
   --tw-bg-opacity: 1;

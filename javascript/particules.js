@@ -4,11 +4,11 @@ particlesJS('particles-js', {
         number: { value: 100 }, 
         size: { value: 3 }, 
         move: { speed: 2 }, 
-        color: { value: "#ffffff" }, 
+        color: { value: "#333" }, 
         line_linked: { 
             enable: true,
             distance: 150,
-            color: "#ffffff",
+            color: "#FF9D00",
             opacity: 0.5,
             width: 1
         }
@@ -25,3 +25,5 @@ particlesJS('particles-js', {
         }
     }
 });
+
+
