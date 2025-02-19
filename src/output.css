@@ -661,20 +661,12 @@ video {
   height: 80px;
 }
 
-.min-h-\[70vh\] {
-  min-height: 70vh;
-}
-
 .min-h-\[90vh\] {
   min-height: 90vh;
 }
 
 .w-\[100\%\] {
   width: 100%;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
 }
 
 .w-\[300px\] {
@@ -687,10 +679,6 @@ video {
 
 .w-\[80px\] {
   width: 80px;
-}
-
-.max-w-3xl {
-  max-width: 48rem;
 }
 
 .cursor-pointer {
@@ -775,10 +763,6 @@ video {
   background-color: rgb(124 17 82 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[\#7C1152\]\/90 {
-  background-color: rgb(124 17 82 / 0.9);
-}
-
 .bg-\[\#EDF1EF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(237 241 239 / var(--tw-bg-opacity, 1));
@@ -792,14 +776,6 @@ video {
 .bg-\[\#f1f1f1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(241 241 241 / var(--tw-bg-opacity, 1));
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .object-cover {
@@ -832,11 +808,6 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -862,11 +833,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-\[1\.7rem\] {
@@ -1302,6 +1268,31 @@ form span{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
+}
+
+@media screen and (max-width:1060px) {
+  .box-about{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .child-box-about{
+    max-width: 400px;
+    overflow-y: auto;
+  }
+}
+
+@media screen and (max-width:760px) {
+  header ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 12vh;
+    width: 200px;
+    height:250px;
+    left:0;
+    background-color: #7C1152;
+  }
 }
 
 /* npx tailwindcss -i ./src/input.css -o ./src/output.css --watch */

@@ -307,5 +307,31 @@ image-rendering: -webkit-optimize-contrast;
     background-position: center; */
 
 }
+@media screen and (max-width:1060px) {
+    .box-about{
+        display:flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1060px) {
+    .child-box-about{
+      max-width: 400px;
+      overflow-y: auto;
+    }
+}
+@media screen and (max-width:760px) {
+    header ul{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 12vh;
+        width: 200px;
+        height:250px;
+
+        left:0;
+        background-color: #7C1152;
+
+    }
+}
 
 }
