@@ -915,6 +915,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 .opacity-100 {
   opacity: 1;
 }
@@ -1277,8 +1281,8 @@ form span{
   }
 
   .child-box-about{
-    max-width: 400px;
-    overflow-y: auto;
+    /* max-width: 400px;
+      overflow-y: auto; */
   }
 }
 
@@ -1292,6 +1296,54 @@ form span{
     height:250px;
     left:0;
     background-color: #7C1152;
+  }
+
+  .circle-btn{
+    outline: none;
+    background:none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+    transition:transform 0.4s ease;
+  }
+
+  .circle-btn:hover{
+    transform: scale(1.1);
+  }
+
+  .circle-btn:active{
+    transform: scale(1.2);
+  }
+
+  .circle-btn .fa-bars{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size:30px;
+    transform: translate(-50%, -50%);
+    will-change:transform ;
+  }
+
+  svg{
+    transform: rotate(-90deg);
+  }
+
+  .bg-svg{
+    stroke:#b8b8b834;
+    stroke-width:4;
+  }
+
+  .filled{
+    stroke:#fff;
+    stroke-width: 4;
+    stroke-dasharray:1;
+    stroke-dashoffset:1 ;
+    transition: .2s ease-in-out;
+  }
+
+  .circle-btn:hover .filled{
+    stroke-dashoffset:0 ;
   }
 }
 
